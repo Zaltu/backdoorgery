@@ -81,9 +81,17 @@ def getConsoleMetrics(user, console):
         sumStr = ("{user} has the following stats for their {console}:\n"
                   "{unfinished} games unfinished\n{beaten} games beaten\n{complete} games completed")
         if len(data) > 9:
-            return sumStr.format(user=user, console=console, unfinished=data[1], beaten=data[8], complete=data[11])
+            return sumStr.format(user=user,
+                                 console=console,
+                                 unfinished=data[1],
+                                 beaten=data[8],
+                                 complete=data[11])
         else:
-            return sumStr.format(user=user, console=console, unfinished=data[1], beaten=data[4], complete=data[7])
+            return sumStr.format(user=user,
+                                 console=console,
+                                 unfinished=data[1],
+                                 beaten=data[4],
+                                 complete=data[7])
     except IndexError:
         return "Invalid user \"%s\" or console \"%s\"" % (user, console)
 
