@@ -12,5 +12,5 @@ Even though you have to log in to access the Fortune Cookie tab normally, you ca
 A decent chunk of the response parsing is hard-coded because this is an ugly interpretation of an HTML cURL response. Not sure how else to do this through Python since there's no official API.
 
 # Requires
-- requests 2.18.4
+- requests
 - pyquery 1.4.0

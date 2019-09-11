@@ -1,0 +1,14 @@
+"""
+AIGIS config for backdoorgery
+"""
+from backdoorgery import backdoorgery as backloggery  #pylint: disable=unused-import
+
+PLUGIN_TYPE = "core"
+SKILLS = ["backloggery.getConsoleMetrics", "backloggery.getFortuneCookie"]
+
+SYSTEM_REQUIREMENTS = ["pip3.7"]
+
+REQUIREMENT_COMMAND = "pip3.7 install -r"
+REQUIREMENT_FILE = "{root}/requirements.txt"
+
+SECRETS = {}
