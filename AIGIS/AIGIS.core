@@ -1,0 +1,6 @@
+"""
+Define names to export to AIGIS
+"""
+import backdoorgery.backdoorgery as backloggery  #pylint: disable=unused-import
+
+SKILLS = ["backloggery.getConsoleMetrics", "backloggery.getFortuneCookie"]
